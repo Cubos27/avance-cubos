@@ -50,6 +50,10 @@ img{
   margin-top: 20px;
 }
 
+button a {
+  text-decoration: none;
+  color: black;
+}
 
 .ani{
   animation: wiggle 2s linear infinite;

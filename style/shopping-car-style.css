@@ -79,6 +79,10 @@ i {
     color: white;
 }
 
+button a {
+    text-decoration: none;
+}
+
 .bi {
     width: 1em;
     height: 1em;
