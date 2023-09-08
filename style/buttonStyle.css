@@ -27,6 +27,7 @@
 }
 
 .stdButton span{
+    color: white;
     background-color: black;
     padding: 16px 24px;
     border-radius: 6px;
