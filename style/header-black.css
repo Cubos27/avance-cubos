@@ -184,3 +184,13 @@ header #headerCounter #closeButton{
     
     cursor: pointer;
 }
+
+
+/*Header relleno carrito*/
+
+header #relleno img{
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+}

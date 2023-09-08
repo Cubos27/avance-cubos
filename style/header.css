@@ -98,6 +98,10 @@ header.abajo #headerCounter article{
     opacity: 1;
 }
 
+header.abajo #relleno img{
+    filter:invert(0);
+}
+
 /*Letras cuando el header baja*/
 header.abajo .navLink, 
 header.abajo h1, 
@@ -183,4 +187,16 @@ header #headerCounter #closeButton{
     align-self:self-start;
     
     cursor: pointer;
+}
+
+
+/*Header relleno carrito*/
+
+header #relleno img{
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+    filter:invert(1);
+    transition: filter .5s;
 }
