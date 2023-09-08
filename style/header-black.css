@@ -1,0 +1,186 @@
+:root{
+    --logoFontSize: 20px;
+    --titleFontSize: 18px;
+    --textFontSize: 15px;
+}
+
+
+
+
+
+/*Tamaños de fuentes*/
+header #seeMore,
+header h1{
+    font-size: 20px;
+}
+
+header h2{
+    font-size: 18px;
+}
+
+header .navLink{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+/*Estilo global*/
+*{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    color: black; /*Aqui aplico el color blanco a todas las letras*/
+    user-select: none;
+}
+
+/* body{
+    background-color: black;
+} */
+
+
+
+
+
+/*Clase para centrar contenido de contenedores*/
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/*Primeras tres secciones del header*/
+header{
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 50px;
+
+    overflow: hidden;
+    transition: height .5s, background-color .5s;
+}
+
+header #headerSelector{
+    width: 100%;
+    height: 50px;
+}
+
+header #headerCounter{
+    justify-content: space-around;
+
+    width: 100%;
+    height: 400px;
+}
+
+
+
+
+
+/*Estilo del header cuando baje*/
+header.abajo{
+    height: 450px;
+
+    background-color: white;
+    transition: height .5s, background-color .5s;
+}
+
+header.abajo #headerCounter article{
+    opacity: 1;
+}
+
+/*Letras cuando el header baja*/
+header.abajo .navLink, 
+header.abajo h1, 
+header article h2, 
+header article a,
+header #closeButton,
+header #seeMore{
+    color: black;
+}
+
+
+
+
+
+/*Estilos del headerSelector (La seccion superior que contiene el logo, los navlinks y el carrito)*/
+header #headerSelector #headerLogo{
+    width: 20%;
+    height: 100%;
+}
+
+header #headerSelector  #headerLogo h1{
+    transition: color .5s;
+}
+
+header #headerSelector nav{
+    width: 60%;
+    height: 100%;
+}
+
+header #headerSelector nav .navLink{
+    margin: 10px;
+
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .5s;
+}
+
+header #relleno{
+    width: 20%;
+    height: 100%;
+}
+
+
+
+
+
+/*Estilos del headerCounter (Seccion que se dezplasa para mostrar las motos)*/
+header #headerCounter #seeMore{
+    text-decoration: none;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+header #headerCounter article{
+    width: fit-content;
+    margin: 20px;
+
+    opacity: 0;
+    box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+    overflow: hidden;
+    transition: opacity .1s, transform .5s;
+}
+
+header #headerCounter article:hover{
+    transform: scale(1.02);
+}
+
+header  #headerCounter article img{
+    width: 250px;
+    height: 180px;
+}
+
+header #headerCounter article #desc{
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+}
+
+header #headerCounter #closeButton{
+    position: absolute;
+    right: 50px;
+    align-self:self-start;
+    
+    cursor: pointer;
+}
