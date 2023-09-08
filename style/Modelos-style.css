@@ -45,17 +45,12 @@ img{
 }
 
 .nofooter{
+  display: flex;
   text-align: center;
   margin-top: 20px;
 }
 
-button{
-  padding: 15px 40px;
-  background-color: #FFD60A;
-  margin: 25px;
-  border-radius: 5px;
-  cursor: pointer;
-}
+
 .ani{
   animation: wiggle 2s linear infinite;
 }
