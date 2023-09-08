@@ -26,7 +26,7 @@ section h2 {
 }
 
 .product {
-    background-color: #00000095;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +39,7 @@ section h2 {
     justify-content: baseline;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .product img {
@@ -49,6 +49,7 @@ section h2 {
 
 .product p {
     padding: 10px;
+    color: white;
 }
 
 i {
@@ -75,5 +76,12 @@ i {
 #btn:hover {
     transition: all ease-in-out 0.3s;
     background-color: chocolate;
+    color: white;
+}
+
+.bi {
+    width: 1em;
+    height: 1em;
+    font-size: 1.5em;
     color: white;
 }
