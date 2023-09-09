@@ -15,7 +15,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #384252;
 }
 
 footer section {
@@ -29,11 +29,11 @@ footer section {
 footer p {
     margin-bottom: 10%;
     font-size: 1.2em;
-    color: white;
+    color: #ffffdd;
 }
 
 footer a {
-    color: white;
+    color: #ffffdd;
 }
 
 #acercade {
@@ -44,5 +44,5 @@ footer .bi {
     width: 1em;
     height: 1em;
     font-size: 2em;
-    color: white;
+    color: #ffffdd;
 }
